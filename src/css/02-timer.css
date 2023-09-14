@@ -113,3 +113,8 @@ a {
   font-size: 26px;
   color: #70050a;
 }
+
+.flatpickr-calendar.open,
+.flatpickr-calendar.inline {
+  max-height: 340px;
+}

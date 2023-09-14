@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Rubik Distressed', cursive;
+}
+
+body {
+  background: url('../images/wpapers-min.jpg') no-repeat center;
+  background-size: cover;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(48, 50, 56, 0.5);
+}
+
+a {
+  position: fixed;
+  top: 15px;
+  left: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+  color: #fff;
+  background-color: transparent;
+}
+
+input[type='number'] {
+  width: 200px;
+  height: 30px;
+  font-size: 16px;
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid #70050a;
+  border-radius: 5px;
+  color: #70050a;
+}
+
+button[type='submit'] {
+  background: #70050a;
+  color: #fff;
+  border: none;
+  width: 150px;
+  height: 40px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button[type='submit']:hover {
+  background: #920a14;
+}

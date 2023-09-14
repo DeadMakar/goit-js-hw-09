@@ -14,24 +14,39 @@ body {
   flex-direction: column;
 }
 
+a {
+  position: fixed;
+  top: 15px;
+  left: 20px;
+}
+
 button[data-start] {
-  cursor: pointer;
   position: relative;
+  background: #70050a;
+  color: #fff;
+  border: none;
   width: 500px;
   height: 148px;
-  margin: 50px;
-  border-radius: 70px;
-  box-shadow: 0 10px 10px rgba(140, 140, 140, 0.3);
   font-size: 72px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 50px;
 }
 
 button[data-stop] {
-  cursor: pointer;
   position: relative;
+  background: #70050a;
+  color: #fff;
+  border: none;
   width: 500px;
   height: 148px;
-  margin: 50px;
-  border-radius: 70px;
-  box-shadow: 0 10px 10px rgba(140, 140, 140, 0.3);
   font-size: 72px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 50px;
+}
+
+button[data-start]:hover,
+button[data-stop]:hover {
+  background: #920a14;
 }
