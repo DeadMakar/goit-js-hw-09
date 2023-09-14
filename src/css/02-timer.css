@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Fascinate Inline', sans-serif;
+}
+
+body > div {
+  background: url('../images/article_00025261-min.jpg') no-repeat center;
+  background-size: cover;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(48, 50, 56, 0.5);
+}
+
+a {
+  position: fixed;
+  top: 15px;
+  left: 10px;
+  color: black;
+}
+
+.input-date-conteiner {
+  position: fixed;
+  top: 0;
+  width: 220px;
+  height: 110px;
+  background: #1d1e22;
+  box-shadow: 0 0 10px #70050a, 0 0 20px #70050a;
+  border-radius: 0 0 50% 50% / 0 0 100% 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-date-conteiner div {
+  margin: 10px auto 0 auto;
+  width: 110px;
+  height: 60px;
+  position: relative;
+}
+
+#datetime-picker {
+  background: transparent;
+  color: #70050a;
+  border: none;
+  outline: none;
+  height: 60px;
+  font-size: 26px;
+  text-align: center;
+  align-content: center;
+}
+
+.input-date-conteiner button {
+  background: #70050a;
+  color: #fff;
+  border: none;
+  width: 60px;
+  height: 40px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.input-date-conteiner button:hover {
+  background: #920a14;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 350px;
+  margin: 0 25px;
+  border-radius: 10px;
+  cursor: default;
+  background: linear-gradient(#70050a 0%, #303238 100%);
+  background: #1d1e22;
+  box-shadow: 0 0 10px #70050a, 0 0 20px #70050a;
+  text-align: center;
+}
+
+.value {
+  font-size: 100px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.label {
+  font-size: 26px;
+  color: #70050a;
+}
