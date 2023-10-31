@@ -24,15 +24,35 @@ const onCloseCallback = selectedDates => {
   } else {
     showSuccessNotification('You selected a valid future date');
     selectors.startBtnRef.disabled = false;
+
+    // Зберегти вибрану дату в локальному сховищі
+    localStorage.setItem('selectedDate', selectedDate.toISOString());
   }
 };
 
-initializeDateTimePicker('#datetime-picker', options, onCloseCallback);
+// Визначити ініціалізацію таймера після завантаження сторінки
+window.addEventListener('load', () => {
+  const savedSelectedDate = localStorage.getItem('selectedDate');
 
-selectors.startBtnRef.disabled = true;
+  if (savedSelectedDate) {
+    options.defaultDate = new Date(savedSelectedDate);
+  }
 
-selectors.startBtnRef.addEventListener('click', () => {
-  timer.startTimer(updateTimerDisplay);
+  initializeDateTimePicker('#datetime-picker', options, onCloseCallback);
+
+  selectors.startBtnRef.disabled = true;
+
+  selectors.startBtnRef.addEventListener('click', () => {
+    timer.startTimer(updateTimerDisplay);
+  });
+
+  // Запустити таймер, якщо вибрана дата в майбутньому
+  const currentDate = new Date();
+  const selectedDate = new Date(savedSelectedDate);
+
+  if (selectedDate > currentDate) {
+    timer.startTimer(updateTimerDisplay);
+  }
 });
 
 function updateTimerDisplay({ days, hours, minutes, seconds }) {
