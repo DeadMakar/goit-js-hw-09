@@ -95,7 +95,7 @@ a {
   width: 250px;
   height: 250px;
   margin: 0 25px;
-  border-radius: 50%;
+  border-radius: 10px;
   cursor: default;
   background: linear-gradient(#70050a 0%, #303238 100%);
   background: #1d1e22;
