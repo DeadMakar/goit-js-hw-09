@@ -39,7 +39,7 @@ a {
   width: 220px;
   height: 110px;
   background: #1d1e22;
-  box-shadow: 0 0 10px #70050a, 0 0 20px #70050a;
+  box-shadow: 0 0 10px #70050a, 0 0 20px #05e2ec;
   border-radius: 0 0 50% 50% / 0 0 100% 100%;
   display: flex;
   flex-direction: column;
@@ -55,7 +55,7 @@ a {
 
 #datetime-picker {
   background: transparent;
-  color: #70050a;
+  color: #05e2ec;
   border: none;
   outline: none;
   height: 60px;
@@ -65,7 +65,7 @@ a {
 }
 
 .input-date-conteiner button {
-  background: #70050a;
+  background: #05e2ec;
   color: #fff;
   border: none;
   width: 60px;
