@@ -99,7 +99,7 @@ a {
   cursor: default;
   background: linear-gradient(#70050a 0%, #303238 100%);
   background: #1d1e22;
-  box-shadow: 0 0 10px #70050a, 0 0 20px #70050a;
+  box-shadow: 0 0 10px #70050a, 0 0 20px #05e2ec;
   text-align: center;
 }
 
@@ -111,7 +111,7 @@ a {
 
 .label {
   font-size: 26px;
-  color: #70050a;
+  color: #05e2ec;
 }
 
 .flatpickr-calendar.open,
